@@ -1,0 +1,280 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body
+{ 
+    background: #000;
+    color: #fff;
+}
+
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    
+}
+.header .heroimg
+
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -10;
+    opacity: 0.5;
+
+}
+
+.header nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.header .logo
+{
+    max-width: 150px;
+    margin: 0;
+    padding: 0%;
+    cursor: pointer;
+}
+.header nav div button
+{
+    margin : 0 10px;
+    padding: 0px 2px;
+    border : 0;
+    outline : 0;
+    background: #db0000c5;
+    color : #fff;
+    font-size: 12px;
+    padding: 7px 20px;
+    cursor: pointer;
+
+}
+
+.header nav div .lang-bt
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+
+}
+.header nav div .lang-bt img
+{
+    width:20px;
+    margin-left: 5px;
+}
+
+
+.header .main_text
+{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header .main_text h1
+{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+
+.header .main_text h3
+{
+    font-weight: 400 ;
+    margin-bottom: 20px;
+}
+
+.header .email-signup
+{
+
+   
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   margin-top: 30px;
+   overflow: hidden;
+   
+   
+
+   
+}
+
+.header .email-signup input
+{
+   flex: 1;
+   padding: 10PX 20PX;
+  
+
+}
+
+.header .email-signup  button
+{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color:  #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10PX 20PX;
+}
+
+
+.features
+{
+    margin-top: 20px;
+    font-size: 22px;
+   
+}
+
+.features .row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .row .text-col
+{
+    padding-left:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    align-items:center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    max-width: 400px;
+   
+}
+
+.features .row .text-col p
+{
+    font-size: 14px;
+    padding-top: 10px;
+    word-spacing: 2px;
+    font-weight: 300;
+    
+}
+
+.features img
+{
+    padding-left: 50px;
+    padding-top: 100px;
+    max-width: 500px;
+}
+
+
+/*  FREQUENTLY ASKED QUESTIONS  */
+
+.faq
+{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq .h1
+{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.faq .answers
+{
+    margin: 50px;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+
+.faq .answers li
+{
+    list-style: none;
+    width: 100%;
+    padding:5px;
+}
+
+.faq .answers li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after
+{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s ;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+.answers .content
+{
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.6s, padding 0.6s;
+
+}
+
+.answers  input[type="radio"]:checked + label +.content
+{
+    max-height: 600px;
+    padding:20px 20px;
+}
+
+.answers  input[type="radio"]:checked + label ::after
+{
+    transform: rotate(135deg);
+}
+
+
+
+
+
+
+
+
